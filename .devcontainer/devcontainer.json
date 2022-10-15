@@ -21,6 +21,7 @@
 		"docker-in-docker": "20.10",
 		"kubectl-helm-minikube": "1.23",
 		"github-cli": "latest",
-		"node": "lts"
+		"node": "lts",
+		"python": "os-provided"
 	}
 }

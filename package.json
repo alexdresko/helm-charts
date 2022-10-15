@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "helm-package": "helm package charts/homer/",
-    "helm-repo-index": "helm repo index --url https://alexdresko.github.io/helm-charts/ --merge index.yaml .",
-    "helm-package-and-index": "npm run helm-package && npm run helm-repo-index"
+    "helm-repo-index": "helm repo index --url https://alexdresko.github.io/helm-charts/ --merge index.yaml . && cp index.yaml pages/_data/index.yaml",
+    "helm-package-and-index": "npm run helm-package && npm run helm-repo-index",
+    "mkdocs-serve": "mkdocs serve -f pages/mkdocs.yml",
+    "mkdocs-build": "mkdocs build -f pages/mkdocs.yml"
   },
   "repository": {
     "type": "git",
