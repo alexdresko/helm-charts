@@ -1,7 +1,7 @@
 site_name: Alex Dresko's helm charts
-site_url: https://alexdresko.github.io/helm-charts/pages
-theme: readthedocs
-repo_url: https://github.com/alexdresko/helm-charts/pages/
+site_url: https://alexdresko.github.io/helm-charts
+theme: material
+repo_url: https://github.com/alexdresko/helm-charts/
 
 plugins:
     - search

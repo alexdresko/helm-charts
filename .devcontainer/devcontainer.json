@@ -23,5 +23,13 @@
 		"github-cli": "latest",
 		"node": "lts",
 		"python": "os-provided"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"redhat.vscode-yaml",
+				"mohsen1.prettify-json"
+			]
+		}
 	}
 }
