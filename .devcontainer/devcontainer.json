@@ -13,7 +13,8 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
+	"postCreateCommand": "npm run post-create",
+	"postStartCommand": "npm run post-start",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode",
@@ -28,7 +29,8 @@
 		"vscode": {
 			"extensions": [
 				"redhat.vscode-yaml",
-				"mohsen1.prettify-json"
+				"mohsen1.prettify-json",
+				"chris-towles.markdown-paste-image"
 			]
 		}
 	}

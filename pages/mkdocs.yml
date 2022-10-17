@@ -1,12 +1,75 @@
 site_name: Alex Dresko's helm charts
-site_url: https://alexdresko.github.io/helm-charts
-theme: material
+site_url: https://alexdresko.github.io/helm-charts/
 repo_url: https://github.com/alexdresko/helm-charts/
+edit_uri: https://github.com/alexdresko/helm-charts/edit/main/pages/docs
+site_description: Shows the available charts and their respective versions in this repository
+site_author: Alex Dresko
+
+nav:
+- Show me the charts: index.md
+- The index.yaml file: index_yaml.md
+- How did I do this?: how.md
+- Roadmap: roadmap.md
+
+theme:
+  name: material
+  locale: en
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+    - navigation.top
+    - content.code.annotate 
+
+markdown_extensions:
+    - toc:
+        permalink: True
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
+    - pymdownx.highlight:
+        anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.superfences
+    - pymdownx.snippets
+    - pymdownx.tabbed:
+        alternate_style: true    
+    - attr_list
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.tasklist:
+        custom_checkbox: true
 
 plugins:
     - search
     - markdownextradata: {}
-
+    - redirects:
+        redirect_maps: {}
+            # 'old.md': 'new.md'
+            # 'old/file.md': 'new/file.md'
+            # 'some_file.md': 'http://external.url.com/foobar'
 
 extra:
   customer:

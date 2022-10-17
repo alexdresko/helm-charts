@@ -3,17 +3,27 @@ entries:
   homer:
   - apiVersion: v2
     appVersion: 1.16.1
-    created: "2022-10-16T01:42:37.698352374Z"
+    created: "2022-10-17T00:51:03.084935378Z"
     description: A Helm chart for Kubernetes
-    digest: 6a48a6a8303710af600d3788f4ff5d4e3e3282d0f12870704341e29f77d09041
+    digest: e3e076205cc2661d5879aae68df3b2b2199a3dae93a6fdfd80e332d8283b09c1
     name: homer
     type: application
     urls:
     - https://alexdresko.github.io/helm-charts/homer-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
+    appVersion: 1.16.1
+    created: "2022-10-17T00:51:03.09995879Z"
+    description: A Helm chart for Kubernetes
+    digest: fdb5f229971d0a35a2ec53faffd354f5bddd2e1546a214860a3719e230d0170c
+    name: homer
+    type: application
+    urls:
+    - https://alexdresko.github.io/helm-charts/docs/homer-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-16T01:42:37.692867302Z"
+    created: "2022-10-17T00:51:03.079986378Z"
     description: A Helm chart for Kubernetes
     digest: 8f13cc3185ee038a06cc6a2f5fef30644cb1adcbfbcf1713b58530f0e4b2a2e1
     name: homer
@@ -21,4 +31,14 @@ entries:
     urls:
     - https://alexdresko.github.io/helm-charts/homer-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-16T01:42:37.687279237Z"
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-10-17T00:51:03.092587849Z"
+    description: A Helm chart for Kubernetes
+    digest: 8f13cc3185ee038a06cc6a2f5fef30644cb1adcbfbcf1713b58530f0e4b2a2e1
+    name: homer
+    type: application
+    urls:
+    - https://alexdresko.github.io/helm-charts/docs/homer-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-10-17T00:51:03.07480445Z"
