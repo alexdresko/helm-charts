@@ -392,7 +392,7 @@
 <p>Also, I really love Dev Containers. </p>
 <p>Here's what the workflow looks like (This is just me playing again, his time with <a href="https://squidfunk.github.io/mkdocs-material/reference/diagrams/#using-flowcharts">mermaid charts</a> <img alt="😄" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f604.svg" title=":smile:" />)</p>
 <pre class="mermaid"><code>graph TD
-  A[npm run helm-package-and-index] --&gt; B[npm run mkdocs-serve] --&gt; C[Open browser to http://127.0.0.1:8000/helm-charts];
+  A[Open the repo as a Dev Container] --&gt; C[Open browser to http://127.0.0.1:8000/helm-charts];
   C --&gt; D[Make changes] --&gt; E[Test changes] --&gt; F{Done?} --&gt;|Yes| G[npm run mkdocs-build]
   F --&gt;|No| D
   G --&gt; H[commit and push] --&gt; I[Verify everything looks good and works in Github]</code></pre>
