@@ -35,3 +35,4 @@ jobs:
           npm run post-create
           npm run helm-package-and-index
           npm run mkdocs-build
+          npm run mkdocs-gh-deploy
