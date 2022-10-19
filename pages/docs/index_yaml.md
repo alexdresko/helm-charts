@@ -5,3 +5,5 @@ Honestly, at this point, I'm just having fun with mkdocs+material. But maybe _so
 ``` title="index.yaml" linenums="1"
 --8<-- "index.yaml"
 ```
+
+You can also view the file directly [here](./index.yaml)
