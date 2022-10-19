@@ -12,7 +12,7 @@
     "mkdocs-build": "mkdocs build -f pages/mkdocs.yml -d ../docs",
     "post-create": "sh .devcontainer/postCreate.sh",
     "post-start": "sh .devcontainer/postStart.sh",
-    "mkdocs-gh-deploy": "mkdocs gh-deploy -f pages/mkdocs.yml"
+    "mkdocs-gh-deploy": "mkdocs gh-deploy -f pages/mkdocs.yml --force"
   },
   "repository": {
     "type": "git",
