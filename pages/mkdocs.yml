@@ -30,13 +30,13 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   features:
-    - navigation.instant
     - navigation.tracking
     - navigation.sections
     - navigation.expand
     - toc.follow
     - navigation.top
     - content.code.annotate 
+    # - navigation.instant
 
 markdown_extensions:
     - toc:
