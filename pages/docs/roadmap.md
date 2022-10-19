@@ -5,8 +5,9 @@ I don't know. This is just a weekend project.
 - [x] Initial site launch and first helm chart (homer)
 - [x] Rebuild the Dev Container and make sure everything still works. I haven't done this in a while. 
     _10/16/2022 9:04:11 PM by AD:   This is slick._
-- [ ] Use a GH action and `mkdocs gh-pages`? I didn't know about this when I started, and it seems to be the way to go. 
-  * dt10/18/2022 10:21:00 PM by AD: Made some progress on this. Looks to be really easy. I inadvertently made things easy on myself with the `npm run post-create` script. 
+- [x] Use a GH action and `mkdocs gh-pages`? I didn't know about this when I started, and it seems to be the way to go. 
+  * 10/18/2022 10:21:00 PM by AD: Made some progress on this. Looks to be really easy. I inadvertently made things easy on myself with the `npm run post-create` script. 
+  * 10/18/2022 11:14:03 PM by AD: This should work. 
 - [ ] Figure out why I have duplicates in index.yaml
     * I think I need to automate the build first, as I feel that might affect how I deal with the index.yaml and .tgz files. 
     * I don't really understand how the "helm repo index" feature works... It seems to pick up on other index.yaml or .tgz files before outputing the final index.yaml. I haven't figured out exactly how that was happening, but I've managed to stop it for now. 
