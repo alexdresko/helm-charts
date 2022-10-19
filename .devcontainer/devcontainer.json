@@ -30,7 +30,8 @@
 			"extensions": [
 				"redhat.vscode-yaml",
 				"mohsen1.prettify-json",
-				"chris-towles.markdown-paste-image"
+				"chris-towles.markdown-paste-image",
+				"yzhang.markdown-all-in-one"
 			]
 		}
 	}

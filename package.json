@@ -7,7 +7,7 @@
     "start": "npm run helm-package-and-index && npm run mkdocs-serve",
     "helm-package": "helm package charts/homer/",
     "helm-repo-index": "helm repo index --url https://alexdresko.github.io/helm-charts/ --merge index.yaml . && cp index.yaml pages/_data/index.yaml",
-    "helm-package-and-index": "npm run helm-package && npm run helm-repo-index && cp index.yaml docs/index.yaml && cp *.tgz docs/",
+    "helm-package-and-index": "npm run helm-package && npm run helm-repo-index && cp index.yaml docs/index.yaml",
     "mkdocs-serve": "mkdocs serve -f pages/mkdocs.yml",
     "mkdocs-build": "mkdocs build -f pages/mkdocs.yml -d ../docs",
     "post-create": "sh .devcontainer/postCreate.sh",
