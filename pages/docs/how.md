@@ -17,7 +17,6 @@ Here's what the workflow looks like (This is just me playing again, his time wit
 ``` mermaid
 graph TD
   A[Open the repo as a Dev Container] --> C[Open browser to http://127.0.0.1:8000/helm-charts];
-  C --> D[Make changes] --> E[Test changes] --> F{Done?} -->|Yes| G[npm run mkdocs-build]
+  C --> D[Make changes] --> E[Test changes] --> F{Done?} -->|Yes| G[commit and push] --> I[Verify everything looks good and works in Github]
   F -->|No| D
-  G --> H[commit and push] --> I[Verify everything looks good and works in Github]
 ```
