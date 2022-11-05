@@ -10,7 +10,7 @@
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [8022],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "npm run post-create",
@@ -31,7 +31,8 @@
 				"redhat.vscode-yaml",
 				"mohsen1.prettify-json",
 				"chris-towles.markdown-paste-image",
-				"yzhang.markdown-all-in-one"
+				"yzhang.markdown-all-in-one",
+				"ms-kubernetes-tools.vscode-kubernetes-tools"
 			]
 		}
 	}

@@ -12,7 +12,8 @@
     "mkdocs-build": "mkdocs build -f pages/mkdocs.yml -d ../docs",
     "post-create": "sh .devcontainer/postCreate.sh",
     "post-start": "sh .devcontainer/postStart.sh",
-    "mkdocs-gh-deploy": "mkdocs gh-deploy -f pages/mkdocs.yml --force"
+    "mkdocs-gh-deploy": "mkdocs gh-deploy -f pages/mkdocs.yml --force",
+    "helm-install": "helm upgrade --install --values charts/homer.yaml homer charts/homer/"
   },
   "repository": {
     "type": "git",

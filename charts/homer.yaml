@@ -1,0 +1,7 @@
+ingress:
+  enabled: true
+  hosts:
+  - host: homer.localtest.me
+    paths:
+    - path: /
+      pathType: ImplementationSpecific

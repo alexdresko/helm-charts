@@ -14,6 +14,12 @@ I don't know. This is just a weekend project.
     * 10/18/2022 11:49:13 PM by AD: DONE! 
 - [x] Figure out how to get VSC to let me paste images into .md files. I think I'm having trouble right now because I'm using a Dev Container. 
 - [x] Display more package information in the listing
+- [x] 11/5/2022 4:02:20 PM: 
+    * The dev container now runnings a minikube cluster with the helm charts already installed. You can hit http://homer.localtest.me:8022 to see homer running.
+    * The dev container includes a .bashrc with `alias k=kubectl`
+    * The dev container install the vscode kubernetes plugin
+    * package.json has a new script for performing the helm install
+    * 
 - [ ] Figure out how to limit the listing to only show a few versions by default, and allow expanding all available versions. 
 - [ ] Make the homer helm chart actually do something. At this point, all I've done is `helm create homer` because I've been having too much fun with mkdocs and material. 
 - [ ] Convert this all into a thing that other people can use to surface their own charts
