@@ -4,3 +4,9 @@ pages/_data/index.yaml
 pages/docs/.obsidian/
 
 nohup.out
+
+*.tgz
+
+pages/docs/index.yaml
+
+index.yaml

@@ -15,10 +15,70 @@ type: application
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
 # Versions are expected to follow Semantic Versioning (https://semver.org/)
-version: 0.1.4
+version: 0.1.5
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
 appVersion: "22.10.2"
+
+annotations:
+  # artifacthub.io/changes: |
+  #   - kind: added
+  #     description: Cool feature
+  #     links:
+  #       - name: GitHub Issue
+  #         url: https://github.com/issue-url
+  #       - name: GitHub PR
+  #         url: https://github.com/pr-url
+  #   - kind: fixed
+  #     description: Minor bug
+  #     links:
+  #       - name: GitHub Issue
+  #         url: https://github.com/issue-url    
+  # artifacthub.io/containsSecurityUpdates: "true"
+  # artifacthub.io/images: |
+  #   - name: img1
+  #     image: repo/img1:1.0.0
+  #   - name: img2
+  #     image: repo/img2:2.0.0
+  #     whitelisted: true    
+  # artifacthub.io/crds: |
+  #   - kind: MyKind
+  #     version: v1
+  #     name: mykind
+  #     displayName: My Kind
+  #     description: Some nice description    
+  # artifacthub.io/crdsExamples: |
+  #   - apiVersion: v1
+  #     kind: MyKind
+  #     metadata:
+  #       name: mykind
+  #     spec:
+  #       replicas: 1    
+  # artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Github repository for this helm chart
+      url: https://alexdresko.github.io/helm-charts
+    - name: Docker container used by this helm chart
+      url: https://hub.docker.com/r/b4bz/homer
+    - name: Github repository for homer
+      url: https://github.com/bastienwirtz/homer
+  artifacthub.io/maintainers: |
+    - name: Alex Dresko
+      email: me@alexdresko.com
+  # artifacthub.io/operator: "true"
+  # artifacthub.io/operatorCapabilities: Basic Install
+  # artifacthub.io/prerelease: "false"
+  # artifacthub.io/recommendations: |
+  #   - url: https://artifacthub.io/packages/helm/artifact-hub/artifact-hub
+  #   - url: https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack    
+  artifacthub.io/screenshots: |
+    - title: Homer running via this helm chart
+      url: https://alexdresko.github.io/helm-charts/img/homer_dashboard.png
+    - title: A helm repo that is actually useful! 
+      url: https://alexdresko.github.io/helm-charts/img/homer_dashboard.png
+  # artifacthub.io/signKey: |
+  #   fingerprint: C874011F0AB405110D02105534365D9472D7468F
+  #   url: https://keybase.io/hashicorp/pgp_keys.asc  
