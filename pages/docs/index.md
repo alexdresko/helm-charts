@@ -6,6 +6,8 @@ I always get frustrated when I paste a helm repository URL into my browser and I
 
     I really do not know what I'm doing. Use at your own risk. 
 
+[![CI](https://github.com/alexdresko/helm-charts/actions/workflows/first.yaml/badge.svg)](https://github.com/alexdresko/helm-charts/actions/workflows/first.yaml) [![pages-build-deployment](https://github.com/alexdresko/helm-charts/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/alexdresko/helm-charts/actions/workflows/pages/pages-build-deployment) [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/alexdresko)](https://artifacthub.io/packages/search?repo=alexdresko)
+
 ## The helm charts! 
 
 {% for entry in index.entries %}
