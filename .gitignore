@@ -10,3 +10,5 @@ nohup.out
 pages/docs/index.yaml
 
 index.yaml
+
+.devcontainer/config

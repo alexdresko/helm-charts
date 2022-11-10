@@ -5,15 +5,24 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run helm-package-and-index && npm run mkdocs-serve",
+
+    "mkdocs-serve": "mkdocs serve -f pages/mkdocs.yml",
+    "mkdocs-build": "mkdocs build -f pages/mkdocs.yml -d ../docs",
+
     "helm-package": "helm package charts/homer/",
     "helm-repo-index": "helm repo index --url https://alexdresko.github.io/helm-charts/ --merge index.yaml . && cp index.yaml pages/_data/index.yaml && cp index.yaml pages/docs/index.yaml && cp *.tgz ./pages/docs/ -v",
     "helm-package-and-index": "npm run helm-package && npm run helm-repo-index",
-    "mkdocs-serve": "mkdocs serve -f pages/mkdocs.yml",
-    "mkdocs-build": "mkdocs build -f pages/mkdocs.yml -d ../docs",
+
     "post-create": "sh .devcontainer/postCreate.sh",
     "post-start": "sh .devcontainer/postStart.sh",
     "mkdocs-gh-deploy": "mkdocs gh-deploy -f pages/mkdocs.yml --force",
-    "helm-install": "helm upgrade --install --values charts/homer.yaml homer charts/homer/"
+
+    "helm-dependency-update": "helm dependency update ./charts/alextesto",
+    "helm-install": "npm run basic-helm-install && npm run advanced-helm-install",
+    "helm-delete": "helm delete basic && helm delete advanced",
+    "basic-helm-install": "helm upgrade --install --values charts/basic.yaml basic charts/homer/",
+    "advanced-helm-install": "helm upgrade --install --values charts/advanced.yaml advanced charts/alextesto"
+    
   },
   "repository": {
     "type": "git",

@@ -6,5 +6,3 @@ mkdir pages/_data/
 cp /workspaces/helm-charts/.devcontainer/.bashrc /home/vscode/.bashrc
 source /home/vscode/.bashrc
 # rm -rf /home/vscode/.minikube
-minikube start
-minikube addons enable ingress
