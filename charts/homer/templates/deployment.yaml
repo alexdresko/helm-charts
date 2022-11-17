@@ -59,7 +59,7 @@ spec:
       volumes:
       - name: {{ include "homer.fullname" . }}
         configMap:
-          {{- if (.Values.customConfigMap).enabled -}}
+          {{ if (.Values.customConfigMap).enabled -}}
           name: {{ $custom }}
           {{- else -}}
           name: {{ include "homer.fullname" . }}
