@@ -1,7 +1,10 @@
+{{- $custom := printf "%s%s" (include "homer.fullname" .) "-custom" }}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "homer.fullname" . }}
+  annotations:
+    custom: {{ $custom }}
   labels:
     {{- include "homer.labels" . | nindent 4 }}
 spec:
@@ -56,7 +59,11 @@ spec:
       volumes:
       - name: {{ include "homer.fullname" . }}
         configMap:
+          {{- if (.Values.customConfigMap).enabled -}}
+          name: {{ $custom }}
+          {{- else -}}
           name: {{ include "homer.fullname" . }}
+          {{ end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}

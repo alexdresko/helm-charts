@@ -1,0 +1,6 @@
+{{- $custom := printf "%s%s" .Release.Name "-homer-custom" }}
+{{- if not .Values.homer.customConfigMap.enabled }}
+Optionally install a custom configMap named `{{ $custom  }}`
+{{- else }}
+Using custom configmap `{{ $custom  }}`
+{{- end }}

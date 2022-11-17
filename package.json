@@ -18,8 +18,9 @@
     "mkdocs-gh-deploy": "mkdocs gh-deploy -f pages/mkdocs.yml --force",
 
     "helm-dependency-update": "helm dependency update ./charts/alextesto",
-    "helm-install": "npm run basic-helm-install && npm run advanced-helm-install",
+    "helm-install": "npm run helm-dependency-update && npm run basic-helm-install && npm run advanced-helm-install",
     "helm-delete": "helm delete basic && helm delete advanced",
+    "helm-reinstall": "npm run helm-delete & npm run helm-dependency-update && npm run helm-install",
     "basic-helm-install": "helm upgrade --install --values charts/basic.yaml basic charts/homer/",
     "advanced-helm-install": "helm upgrade --install --values charts/advanced.yaml advanced charts/alextesto"
     

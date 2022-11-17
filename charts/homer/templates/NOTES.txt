@@ -1,3 +1,9 @@
+{{- $custom := printf "%s%s" (include "homer.fullname" .) "-custom" }}
+{{- if not .Values.customConfigMap.enabled }}
+Optionally install a custom configMap named `{{ include "homer.fullname" . }}-custom`
+{{- else }}
+Using custom configmap `{{ include "homer.fullname" . }}-custom`
+{{- end }}
 1. Get the application URL by running these commands:
 {{- if .Values.ingress.enabled }}
 {{- range $host := .Values.ingress.hosts }}

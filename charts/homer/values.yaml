@@ -163,3 +163,6 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+customConfigMap:
+  enabled: false
