@@ -125,6 +125,8 @@ service:
 
 ingress:
   enabled: false
+  localTestMe:
+    enabled: false  
   className: ""
   annotations: {}
     # kubernetes.io/ingress.class: nginx

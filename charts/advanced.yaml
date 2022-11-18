@@ -1,10 +1,7 @@
 homer:
   ingress:
     enabled: true
-    hosts:
-    - host: homer-advanced.localtest.me
-      paths:
-      - path: /
-        pathType: ImplementationSpecific
+    localTestMe:
+      enabled: true
   customConfigMap:
     enabled: true

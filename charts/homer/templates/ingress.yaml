@@ -37,6 +37,23 @@ spec:
     {{- end }}
   {{- end }}
   rules:
+    {{- if .Values.ingress.localTestMe.enabled }}
+    - host: {{ include "homer.fullname" . }}.localtest.me
+      http:
+        paths:
+        - path: /
+          pathType: ImplementationSpecific
+          backend:
+            {{- if semverCompare ">=1.19-0" $.Capabilities.KubeVersion.GitVersion }}
+            service:
+              name: {{ $fullName }}
+              port:
+                number: {{ $svcPort }}
+            {{- else }}
+            serviceName: {{ $fullName }}
+            servicePort: {{ $svcPort }}
+            {{- end }}
+    {{- end }}
     {{- range .Values.ingress.hosts }}
     - host: {{ .host | quote }}
       http:

@@ -22,6 +22,7 @@
     "helm-delete": "helm delete basic && helm delete advanced",
     "helm-reinstall": "npm run helm-delete & npm run helm-dependency-update && npm run helm-install",
     "basic-helm-install": "helm upgrade --install --values charts/basic.yaml basic charts/homer/",
+    "basic-helm-template": "helm template --values charts/basic.yaml basic charts/homer/",
     "advanced-helm-install": "helm upgrade --install --values charts/advanced.yaml advanced charts/alextesto",
     "advanced-helm-template": "npm run helm-dependency-update && helm template --values charts/advanced.yaml advanced charts/alextesto"
     
