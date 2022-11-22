@@ -5,5 +5,6 @@ homer:
     auto:
       enabled: true
       friendlyName: dashboard
+    hosts: []
   customConfigMap:
     enabled: true
