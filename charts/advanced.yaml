@@ -1,7 +1,9 @@
+# See the homer values.yaml file for an explanation of these values
 homer:
   ingress:
     enabled: true
-    localTestMe:
+    auto:
       enabled: true
+      friendlyName: dashboard
   customConfigMap:
     enabled: true

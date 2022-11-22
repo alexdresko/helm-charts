@@ -1,3 +1,4 @@
+# See the homer values.yaml file for an explanation of these values
 ingress:
   enabled: true
   hosts:

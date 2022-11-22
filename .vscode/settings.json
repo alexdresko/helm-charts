@@ -3,5 +3,8 @@
         {
             "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
         }
-    ]
+    ],
+    "files.exclude": {
+        "**/*.tgz": true
+    }
 }
