@@ -1,6 +1,6 @@
 dependencies:
 - name: homer
   repository: file://../homer
-  version: 0.1.8
-digest: sha256:915cea10d4f90a8b795d809e42ffe66a70f721287e93c33aa68c72fe222e8e5c
-generated: "2022-11-19T03:53:06.348388764Z"
+  version: 0.1.10
+digest: sha256:4746b7a3152d4c2358dc0684546323ac63eb1c00e084064b50c22dda62228708
+generated: "2022-11-25T03:13:16.804328441Z"
