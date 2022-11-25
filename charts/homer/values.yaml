@@ -128,11 +128,11 @@ ingress:
   enabled: false
   # auto allows for automatically creating a useful ingress resource that looks like <release name>-<chart name OR friendlyName>.localtest.me. For example, advanced-dashboard.localtest.me, where "advanced" is the helm release name, "dashboard" is specified as the friendlyName, and localtest.me is the domain. 
   auto:
-    # enabled enables or disables the auto feature
+    # enabled enables or disables the auto ingress feature
     enabled: false
-    # domain specifies the domain to use. By default, "localtest.me" is used to make accessing the service easier locally. <anything>.localtest.me will resolve to 127.0.01. 
+    # domain specifies the domain to use. By default, "localtest.me" is used to make accessing the service easier locally. <anything>.localtest.me will resolve to 127.0.01. This does require an internet connection, but it only uses the internet to resolve the hostname to 127.0.0.1. It does not transmit data over the internet.
     domain: localtest.me
-    # friendlyName optionally overrides the value returned from the fullname helper. This only affects the URL that is generated, so it makes more sense than overriding fullnameOverride or nameOverride. 
+    # friendlyName optionally overrides the value returned from the fullname helper. This only affects the URL that is generated, so it makes more sense than overriding fullnameOverride or nameOverride. This does require an internet connection, but it only uses the internet to resolve the hostname to 127.0.0.1. It does not transmit data over the internet.
     friendlyName: ""
   className: ""
   annotations: {}
@@ -175,5 +175,5 @@ affinity: {}
 
 # customConfigMap prevents .Values.config from being used, and allows you to create your own, more dynamic configMap. 
 customConfigMap:
-  # enabled if true, tells the the chart to look for a configmap with a name that is based on the result of `(include "homer.fullname" .)-custom`. When you install homer, the NOTES.txt file will spit output the very specific name that the chart is looking for. You can also look at the advanced demo for an example of how to use this feature. 
+  # enabled if true, tells the the chart to look for a configmap with a name that is based on the result of `{{ .Release.Name }}-homer-custom`. When you install homer, the NOTES.txt file will spit output the very specific name that the chart is looking for. You can also look at the advanced demo for an example of how to use this feature. The [advanced demo](https://github.com/alexdresko/helm-charts/blob/main/charts/alextesto/templates/configmap.yaml) includes an example configMap. 
   enabled: false
