@@ -6,5 +6,8 @@
     ],
     "files.exclude": {
         "**/*.tgz": true
-    }
+    },
+    "markdownPasteImage.imageFolderPath": "${currentFileDir}/img",
+    "pasteImage.path": "./img",
+    "pasteImage.showFilePathConfirmInputBox": false
 }

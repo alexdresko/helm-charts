@@ -30,9 +30,10 @@
 			"extensions": [
 				"redhat.vscode-yaml",
 				"mohsen1.prettify-json",
-				"chris-towles.markdown-paste-image",
 				"yzhang.markdown-all-in-one",
-				"ms-kubernetes-tools.vscode-kubernetes-tools"
+				"ms-kubernetes-tools.vscode-kubernetes-tools",
+				"sakamoto66.vscode-paste-image",
+				"AustinYoung.markdown-image-manage"
 			]
 		}
 	}
