@@ -6,11 +6,13 @@ site_description: Shows the available charts and their respective versions in th
 site_author: Alex Dresko
 
 nav:
-- Show me the charts: index.md
+- Home: index.md
 - The index.yaml file: index_yaml.md
 - How did I do this?: how.md
 - Roadmap: roadmap.md
-
+- 'The charts':
+  - "Homer": "homer.md"
+  
 theme:
   name: material
   favicon: img/favicon.ico

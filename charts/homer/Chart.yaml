@@ -1,5 +1,6 @@
 apiVersion: v2
 name: homer
+icon: https://raw.githubusercontent.com/bastienwirtz/homer/5418c6291a39d27aeee471673adba742080e1ccb/public/logo.png
 description: Works and doesn't require the k8s-at-home common.yaml. A dead simple static HOMe for your servER to keep your services on hand from a simple yaml config.
 
 # A chart can be either an 'application' or a 'library' chart.
